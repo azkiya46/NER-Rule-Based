@@ -1,0 +1,42 @@
+A = kalimat [i][0] in organisasi
+B = kalimat [i][0] in lokasi
+C = kalimat [i][0] in person
+
+N=kumpulan NN dan atau NNP (ENTITAS)
+
+aturan tanggal
+aturan 1 : hari/bulan -> kamus
+aturan 2 : format (2/4)
+aturan 3 : hari+format -> Senin (2/4)
+aturan 4 : tanggal+bulan -> 4 Februari 
+aturan 5 : tanggal+bulan+tahun -> 4 Februari 1993 
+aturan 6 : predate + angka -> pemilu 2004 ato pemilu 2001-2004
+atura 7 : CDP/CDP -> 2003/2004
+
+aturan organisai:
+preplokasi(IN)+organisasiprefik(NN)+NNP
+aturan 1 : A+N
+aturan 2 :N+,+N
+aturan 3 : N+CC+N
+aturan 4 : N+,+CC+N 
+aturan 5 : N+suffixorg : Tbk, Inc.
+aturan 6 : upper ->PDIP, DPP, PKB, PBB
+
+
+aturan lokasi:
+aturan 1 :B+N
+turan 2 :N+,+N 
+aturan3 : N+CC+N 
+aturan 4 : N+,+CC+N
+aturan 5 : B+N+ - +N -> ke Jakarta-Bandung  
+
+aturan person:
+aturan 1 : C+N
+aturan 2 :N+,+N 
+aturan 3 : N+CC+N 
+aturan 4 : N+,+CC+N 
+aturan 5 : jabatan atau gelar atau N+suffixperson : S.kom, M.Kom, punya kelas kata NN 
+aturan 6 : preposisi+JJ+N -> Ketua Umum Agus Soleh
+aturan 7 : N+OP -> Susilo ( presiden )
+aturan 8 : N+VBI/VBT -> Anto mengatakan, Anto mengakui
+aturan 9 : VBI/VBT+N -> ujar Anto 
