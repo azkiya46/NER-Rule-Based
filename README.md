@@ -1,5 +1,5 @@
 # NER-Rule-Based
-Named Entity Recognition In Indonesian News Articles Based On Rule Based Approach
+Named Entity Recognition In Indonesian News Articles Based On Rule Based Approach.
 Postagging that used in this study is POS Tagger from PEBAHASA
 
 PEBAHASA
